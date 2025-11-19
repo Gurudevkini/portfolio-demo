@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; }
+        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        
+        /* Header & Profile Image */
+        header { text-align: center; padding: 4rem 0; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 4px solid white; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2.5rem; color: var(--primary); }
+        header p { font-size: 1.2rem; color: #64748b; }
+        
+        section { margin-bottom: 3rem; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; margin-top: 0; }
+        
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #e0f2fe; color: #0369a1; padding: 5px 15px; border-radius: 20px; font-weight: bold; }
+        
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
+        .btn:hover { opacity: 0.9; }
+
+        /* Footer Social Icons */
+        footer { text-align: center; margin-top: 3rem; color: #94a3b8; }
+        .social-links { margin-bottom: 1rem; }
+        .social-links a { color: #64748b; font-size: 1.5rem; margin: 0 10px; transition: color 0.3s; }
+        .social-links a:hover { color: var(--primary); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="pfp.png" alt="Profile Photo" class="profile-img"> <! Save your photo in this folder and change the src to your filename, e.g. "me.jpg">
+        
+        <h1>[Your Name Here]</h1> <! Your name here>
+        <p>Software Engineer Fresher | Tech Enthusiast</p>
+        <a href="mailto:email@gmail.com" class="btn">Contact Me</a>  <! Replace with your real email here>
+    </header>
+
+    <section>
+        <h2>About Me</h2><! Add information about yourself here>
+        <p>
+            Hello! I am a passionate fresher looking to kickstart my career in technology. 
+            I love solving problems and learning new tools like Git and GitHub!
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2> <! Add your technical skills here>
+        <div class="skills-grid">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">SQL</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Projects</h2> <! Add your projects here>
+        <ul>
+            <li><strong>Portfolio Website:</strong> Hosted on GitHub Pages using Version Control.</li>
+            <li><strong>Project 2:</strong> A classic game built using Python.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> <! Add your LinkedIn URL inside the href>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>   <! Add your GitHub URL inside the href>
+        </div>
+        <p>Have a good day:)</p>
+    </footer>
+</div>
+
+</body>
+</html>
